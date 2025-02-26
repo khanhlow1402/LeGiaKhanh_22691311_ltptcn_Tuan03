@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XD</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Chefify Logo" class="logo-img">
+            <span id = "chef">Chefify</span>
+
+        </div>        
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>🔍</button>
+        </div>
+        <div class="nav-links">
+            <a href="#">What to cook</a>
+            <a href="#">Recipes</a>
+            <a href="#">Ingredients</a>
+            <a href="#">Occasions</a>
+            <a href="#">About Us</a>
+            <button class="recipe-box">Your Recipe Box</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="filters">
+            <h3>FILTERS</h3>
+            <div class="filter-group">
+                <h4>Type</h4>
+                <label><input type="checkbox"> Pan-fried</label><br>
+                <label><input type="checkbox"> Stir-fried</label><br>
+                <label><input type="checkbox" checked> Grilled</label><br>
+                <label><input type="checkbox" checked> Sauteed</label>
+                <label><input type="checkbox"> Backed</label><br>
+                <label><input type="checkbox"> Steamed</label><br>
+                <label><input type="checkbox" checked> Stewed</label><br>
+            </div>
+            <div class="filter-group">
+                <h4>Time</h4>
+                <input type="range" min="10" max="60" value="30">
+            </div>
+            <div class="filter-group">
+                <h4>Rating</h4>
+                <label><input type="radio" name="rating"> ★★★★★</label><br>
+                <label><input type="radio" name="rating" checked> ★★★★☆</label><br>
+                <label><input type="radio" name="rating" checked> ★★★☆☆</label><br>
+                <label><input type="radio" name="rating" checked> ★★☆☆☆</label><br>
+                <label><input type="radio" name="rating" checked> ★☆☆☆☆</label><br>
+            </div>
+            <button>Apply</button>
+        </div>
+        <div class="content">
+            <p class="search-message">Sorry, no results were found for "cakescascsa"</p>
+            <div class="icon">🔍</div>
+            <p>We have all your Independence Day sweets covered.</p>
+            <div class="suggestions">
+                <span>Sweet Cake</span>
+                <span>Black Cake</span>
+                <span>Pozole Verde</span>
+                <span>Healthy Food</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
