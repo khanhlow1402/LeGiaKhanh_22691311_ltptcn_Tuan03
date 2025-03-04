@@ -4,64 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XD</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="./images/logo.PNG" alt="Chefify Logo" class="logo-img">
-            <span id = "chef">Chefify</span>
-
-        </div>        
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button>🔍</button>
-        </div>
-        <div class="nav-links">
-            <a href="#">What to cook</a>
-            <a href="#">Recipes</a>
-            <a href="#">Ingredients</a>
-            <a href="#">Occasions</a>
-            <a href="#">About Us</a>
-            <button class="recipe-box">Your Recipe Box</button>
-        </div>
-    </nav>
     <div class="container">
-        <div class="filters">
-            <h3>FILTERS</h3>
-            <div class="filter-group">
-                <h4>Type</h4>
-                <label><input type="checkbox"> Pan-fried</label><br>
-                <label><input type="checkbox"> Stir-fried</label><br>
-                <label><input type="checkbox" checked> Grilled</label><br>
-                <label><input type="checkbox" checked> Sauteed</label>
-                <label><input type="checkbox"> Backed</label><br>
-                <label><input type="checkbox"> Steamed</label><br>
-                <label><input type="checkbox" checked> Stewed</label><br>
+        <div class="header">
+            <div class="logo">
+                <img src="./images/logovip.png" alt="">
+                <h2>Chefify</h2>    
+
             </div>
-            <div class="filter-group">
-                <h4>Time</h4>
-                <input type="range" min="10" max="60" value="30">
+            <div class="search-box">
+                <i class="fa fa-search"></i>
+                <input type="text" class="search-input" value="cakescascsa" placeholder="Search...">
             </div>
-            <div class="filter-group">
-                <h4>Rating</h4>
-                <label><input type="radio" name="rating"> ★★★★★</label><br>
-                <label><input type="radio" name="rating" checked> ★★★★☆</label><br>
-                <label><input type="radio" name="rating" checked> ★★★☆☆</label><br>
-                <label><input type="radio" name="rating" checked> ★★☆☆☆</label><br>
-                <label><input type="radio" name="rating" checked> ★☆☆☆☆</label><br>
-            </div>
-            <button>Apply</button>
+                <ul class="menu">
+                    <li><a href="#">What to cook</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Ingredients</a></li>
+                    <li><a href="#">Occasions</a></li>
+                    <li><a href="#">About Us</a> </li>
+                </ul>
+        <div class="user">
+            <a href="#" class="box"><i class="fa-solid fa-square-check"></i>Your Recipe Box</a>
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="profile-img">
         </div>
-        <div class="content">
-            <p class="search-message">Sorry, no results were found for "cakescascsa"</p>
-            <div class="icon">🔍</div>
-            <p>We have all your Independence Day sweets covered.</p>
-            <div class="suggestions">
-                <span>Sweet Cake</span>
-                <span>Black Cake</span>
-                <span>Pozole Verde</span>
-                <span>Healthy Food</span>
+        </div>
+            <div class="left">
+                <div class="haha">
+                <div class="filter">
+                    <i class="fa fa-bars"></i> FILTERS
+                </div>
+                <div class="hihi">
+                    Type <i class="fa fa-chevron-up"></i>
+                </div>
+                <div class="chon">
+                    <div class="chon1">
+                        <label><input type="checkbox"> Pan-fried</label>
+                <label><input type="checkbox" checked> Grilled</label>
+                <label><input type="checkbox"> Sauteed</label>
+                <label><input type="checkbox"> Steamed</label>
+
+                    </div>
+                    <div class="chon2">
+                        <label><input type="checkbox"> Stir-fried</label>
+                        <label><input type="checkbox" checked> Roasted</label>
+                <label><input type="checkbox"> Baked</label>
+                <label><input type="checkbox"> Stewed</label>
+                    </div>
+                </div>
+            </div>
+            <div class="haha">
+             <div class="hihi">
+                Time <i class="fa fa-chevron-up"></i>
+             </div>
+             <div class="time-range">
+                <span>30 minutes</span>
+                <span>50 minutes</span>
+            </div>
+            <input type="range" min="10" max="60" value="50" class="slider">
+            </div>
+            <div class="haha">
+                <div class="hihi">
+                    Rating <i class="fa fa-chevron-up"></i>
+                </div>
+                <div class="rating">
+                    <div class="rating-row">
+                        <input type="checkbox"> 
+                        <span class="stars">★ ★ ★ ★ ★</span>
+                    </div>
+                    <div class="rating-row">
+                        <input type="checkbox"> 
+                        <span class="stars">★ ★ ★ ★ ☆</span>
+                    </div>
+                    <div class="rating-row">
+                        <input type="checkbox" checked> 
+                        <span class="stars">★ ★ ★ ☆ ☆</span>
+                    </div>
+                    <div class="rating-row">
+                        <input type="checkbox" checked> 
+                        <span class="stars">★ ★ ☆ ☆ ☆</span>
+                    </div>
+                    <div class="rating-row">
+                        <input type="checkbox" checked> 
+                        <span class="stars">★ ☆ ☆ ☆ ☆</span>
+                    </div>
+                </div>
+            </div>
+            <button class="apply-btn">Apply</button>
+
+        </div>
+            <div class="right">
+                <h1>Sorry, no results were found for <span class="highlight">“cakescascsa”</span></h1>
+                <img src="./images/hinh.png" alt="No results">
+                <p class="message">We have all your Independence Day sweets covered.</p>
+                <div class="tags">
+                    <a href="#" class="tag">Sweet Cake</a>
+                    <a href="#" class="tag">Black Cake</a>
+                    <a href="#" class="tag">Pozole Verde</a>
+                    <a href="#" class="tag">Healthy food</a>
+                </div>
+            </div>
+        <div class="footer">
+            <div class="footer1" id="footer1">
+                <h3>About Us</h3>
+                <p>Welcome to our website, a wonderful place to explore and learn how to <br> cook like a pro.</p>
+                <div class="email-box">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Send</button>
+                </div>
+                <div class="end">
+                    <h2>Chefify</h2>
+                <p>2023 Cheffy Company</p>
+                <div class="vip">
+                    <a href="#" style="color: white; text-decoration: none;">Terms of Service | </a>
+                    <a href="#" style="color: white;; text-decoration: none;">Privacy Policy</a>
+                </div>
+                </div>
+            </div>
+            <div class="footer1" >  
+                <div class="learn">
+                    <h3>Learn More</h3>
+                <a href="#">Our Cooks</a>
+                <a href="#">See Our Features</a>
+                <a href="#">FAQ</a>
+                </div>
+                <div class="shop">
+                    <h3>Shop</h3>
+                    <a href="#">Gift Subscription</a>
+                    <a href="#">Send Us Feedback</a>
+                </div>
+            </div>
+            <div class="footer1">
+                <h3>Recipes</h3>
+                <a href="#">What to Cook This Week</a>
+                <a href="#">Pasta</a>
+                <a href="#">Dinner</a>
+                <a href="#">Healthy</a>
+                <a href="#">Vegetarian</a>
+                <a href="#">Vegan</a>
+                <a href="#">Christmas</a>
             </div>
         </div>
     </div>

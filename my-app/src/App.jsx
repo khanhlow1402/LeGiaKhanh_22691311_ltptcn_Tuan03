@@ -21,7 +21,7 @@ function App() {
     setData(newData);
   };
   return (
-    <div className="p-6 max-w-md mx-auto bg-gray-900 text-white rounded-lg shadow-lg">
+    <>
             <img src="./public/inverts.jpeg" width={400} />
       <div className="space-y-2">
         <input
@@ -74,7 +74,7 @@ function App() {
           </tbody>
         </table>
       )}
-    </div>
+    </>
   );
 }
 
